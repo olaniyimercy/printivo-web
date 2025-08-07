@@ -28,6 +28,7 @@ header {
     position: fixed;
     background-color: #fff;
     width: 100%;
+    z-index: 999;
 
 
     .header-ctn {
@@ -41,13 +42,13 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .header-cart {
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
 
         span {
             color: orange;
@@ -123,22 +124,30 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
     background-color: white;
-    padding: 6rem 2rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
 
     p {
         width: 20rem;
     }
     
     img {
-        width: 10rem;
-        
+        width: 10rem; 
     }
 
     #home {
         width: 25rem;
         height: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        border-radius: .5rem;
+        gap: 2rem;
+        margin: auto;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .12);
     }
 }
 
