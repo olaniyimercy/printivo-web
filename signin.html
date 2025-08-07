@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+      <link rel="stylesheet" href="../styles/signin.css">
+    <title>Signin</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h2 style="font-size: 2.5rem;">Login</h2>
+        <div class="int">
+          <input type="text" placeholder="Username" required/>
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="int">
+          <input type="password" id="password" placeholder="Password" required/>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div>
+           <p id="displayStrength"></p>
+        </div>
+         
+        <div class="inputs">
+        <button id="submit" onclick="login()">
+          <a href="./homepage.html">Login</a>
+        </button>
+        </div>
+         
+        
+        <div class="fgt-password">
+          <a href="#">Forgot password?</a>
+        </div>
+        <!-- <footer>&copy; 2025</footer> -->
+      </form>
+  
+      <script src="../scripts/signup.js"></script>
+</body>
+</html>
