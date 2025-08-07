@@ -126,10 +126,27 @@ main {
     justify-content: space-between;
     background-color: white;
     padding: 1rem 2rem;
+    width: auto;
+    height: auto;
     gap: 1rem;
 
     p {
-        width: 20rem;
+        width: inherit;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    span {
+        width: inherit;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    h2 {
+        text-align: center;
     }
     
     img {
@@ -145,6 +162,7 @@ main {
         align-items: center;
         border: 0;
         border-radius: .5rem;
+        padding: 1rem;
         gap: 2rem;
         margin: auto;
         box-shadow: 0 0 1rem rgba(0, 0, 0, .12);

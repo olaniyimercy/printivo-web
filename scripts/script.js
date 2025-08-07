@@ -11,7 +11,8 @@ const getUser = async () => {
                eachProduct.innerHTML = `
                <h2>${product.title}</h2>
                <img src="${product.image}"/>
-               <p>${product.description}</p>
+               <p>Price${product.price}</p>
+                <span>${product.description}</span>
                `
             allProducts.appendChild(eachProduct)
             });
