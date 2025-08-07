@@ -9,10 +9,9 @@ const getUser = async () => {
                let eachProduct = document.createElement('div')
                eachProduct.setAttribute('id', 'home')
                eachProduct.innerHTML = `
-               <h2>${product.title}</h2>
                <img src="${product.image}"/>
+               <h2>${product.title}</h2>
                <p>Price${product.price}</p>
-                <span>${product.description}</span>
                `
             allProducts.appendChild(eachProduct)
             });

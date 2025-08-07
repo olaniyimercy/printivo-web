@@ -62,6 +62,7 @@ i {
     border: 0;
     font-weight: 550;
     font-size: 1rem;
+    margin-top: .8rem;
 }
 #submit:hover {
     background-color: rgb(180, 165, 165);
