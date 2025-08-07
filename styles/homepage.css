@@ -98,12 +98,6 @@ main {
         outline: none;
     }
 
-    #search-icon {
-        width: 2.5rem;
-        height: 2.5rem;
-        cursor: pointer;
-    }
-
     img {
         width: 35rem;
         position: absolute;
@@ -127,13 +121,19 @@ main {
 #products {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     gap: 2rem;
-    background-color: teal;
-    display: none;
-    
+    background-color: white;
+    padding: 6rem 2rem;
 
+    p {
+        width: 20rem;
+    }
+    
     img {
         width: 10rem;
+        
     }
 
     #home {
@@ -142,6 +142,7 @@ main {
     }
 }
 
+/* Logo */
 .logos {
     padding: 1rem 2rem;
 
