@@ -136,10 +136,13 @@ main {
     p {
         font-size: 1.2rem;
         text-align: center;
+        color: #384a62;
     }
 
     h2 {
         text-align: center;
+        font-family: "DM Serif Display", serif;
+        color: #384a62;
     }
     
     img {
@@ -199,9 +202,10 @@ main {
 
     h2 {
         padding-bottom: 3rem;
+        color: #384a62;
         font-size: 1.9rem;
         color: rgb(56, 74, 98);
-        font-family: "SF Pro", sans-serif;
+        font-family: "DM Serif Display", serif;
     }
 
     #reviews {

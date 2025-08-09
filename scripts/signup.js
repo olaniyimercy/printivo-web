@@ -1,3 +1,4 @@
+// This script works on the password strength
 const passwordInput = document.getElementById('password');
 const checker = document.getElementById('displayStrength');
 console.log(checker);
@@ -14,7 +15,7 @@ passwordInput.addEventListener('input', function () {
     const letters = includeLetters.test(passwordValue);
     const numbers = includeNumbers.test(passwordValue);
     const characters = includeCharacters.test(passwordValue);
-
+    
     if (!letters || !numbers || !characters) {
         checker.textContent = 'Must contain numbers, alphabet and special characters';
         checker.style.color = 'red';
@@ -29,3 +30,18 @@ passwordInput.addEventListener('input', function () {
         checker.style.color = 'Green';
     }
 });
+
+
+function regBtn(){
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let password = document.getElementById("password").value
+    let userDetails = {
+        name: name,
+        email: email,
+        password: password
+    }
+    localStorage.setItem("user", JSON.stringify(userDetails))
+    let mango = JSON.parse(localStorage.getItem("user")).email
+    console.log(mango);
+}
