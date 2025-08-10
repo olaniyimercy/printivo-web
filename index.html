@@ -31,20 +31,10 @@
         </div>
         <div class="inputs">
            <button id="submit" onclick="regBtn()" >
-            <a href="./signin.html">Signup</a>
+            Signup
         </button>
         </div>
       </form>
     </div>
-    <script>
-    function regBtn() {
-      event.preventDefault(); // Stop form from refreshing
-      const name = document.getElementById('fullName').value;
-      console.log(name);
-      
-      localStorage.setItem('userName', name); // Store in localStorage
-      window.location.href = 'signin.html'; // Go to homepage
-      alert('Successfully SignUp')
-    }
-  </script>
+    <script src="scripts/signup.js"></script>
 </html>

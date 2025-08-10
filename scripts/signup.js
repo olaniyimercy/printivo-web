@@ -1,3 +1,25 @@
+//SignUp
+function regBtn() {
+    let checkpassword1 = document.getElementById('password').value
+    let checkpassword2 = document.getElementById('confirm').value
+      event.preventDefault();
+      const name = document.getElementById('fullName').value;
+    console.log(name);
+    
+    if (checkpassword1 === '') {
+        alert('Fill the form')
+    } else {
+          window.location.href = 'signin.html';
+        alert('Successfully SignUp')
+    }
+    if (checkpassword1 !== checkpassword2) {
+        alert("Password didn't match")
+    } else {
+          return
+    }
+      localStorage.setItem('userName', name);
+}
+
 // This script works on the password strength
 const passwordInput = document.getElementById('password');
 const checker = document.getElementById('displayStrength');

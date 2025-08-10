@@ -1,3 +1,23 @@
+//Welcome Message for the User
+const storedName = localStorage.getItem('userName');
+    if (storedName) {
+      document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`
+    } else {
+      document.getElementById('welcome-text').textContent = 'Welcome, Guest!';
+    }
+
+// Logout
+function outBtn() {
+        const signOut = document.getElementById('logout')
+        if (signOut) {
+            window.location.href = 'index.html'
+            localStorage.clear()
+            alert('You will be logged out of the page')
+        } else {
+            alert('Logout')
+        }
+    }
+
 // This script fetches product data from an API and displays it on the homepage.
 const getUser = async () => {
     fetch('https://fakestoreapi.com/products/')
@@ -20,4 +40,3 @@ const getUser = async () => {
     .catch((err) => console.log("Error fetching data", err));
 }
 getUser()
-
