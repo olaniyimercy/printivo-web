@@ -3,7 +3,7 @@ const storedName = localStorage.getItem('userName');
     if (storedName) {
       document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`
     } else {
-      document.getElementById('welcome-text').textContent = 'Welcome, Guest!';
+      document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`;
     }
 
 // Logout
