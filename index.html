@@ -14,7 +14,7 @@
       <form action="#">
         <h2 style="font-size: 2rem;">SignUp</h2>
         <div class="int">
-            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="fullName" placeholder="Full Name" required>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><circle cx="24" cy="11" r="7" fill="currentColor"/><path d="M4 41c0-8.837 8.059-16 18-16"/><path fill="currentColor" d="m31 42l10-10l-4-4l-10 10v4z"/></g></svg>
         </div>
         <div class="int">
@@ -22,7 +22,7 @@
           <i class="bx bxs-user"></i>
         </div>
         <div class="int">
-          <input type="password" id="password" placeholder="P1assword" required/>
+          <input type="password" id="password" placeholder="Password" required/>
           <i class="bx bxs-lock-alt"></i>
         </div>
         <div class="int">
@@ -31,10 +31,20 @@
         </div>
         <div class="inputs">
            <button id="submit" onclick="regBtn()" >
-            SignUp
+            <a href="./signin.html">Signup</a>
         </button>
         </div>
       </form>
     </div>
-    <script src="./scripts/signup.js"></script>
+    <script>
+    function regBtn() {
+      event.preventDefault(); // Stop form from refreshing
+      const name = document.getElementById('fullName').value;
+      console.log(name);
+      
+      localStorage.setItem('userName', name); // Store in localStorage
+      window.location.href = 'signin.html'; // Go to homepage
+      alert('Successfully SignUp')
+    }
+  </script>
 </html>

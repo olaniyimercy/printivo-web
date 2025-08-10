@@ -12,7 +12,7 @@ const getUser = async () => {
                eachProduct.innerHTML = `
                <img src="${product.image}"/>
                <h2>${product.title}</h2>
-               <p>Price${product.price}</p>
+               <p>Price: $${product.price}</p>
                `
             allProducts.appendChild(eachProduct)
             });
@@ -21,7 +21,3 @@ const getUser = async () => {
 }
 getUser()
 
-// Welcome message
-const welcomeText = document.getElementById('welcome-text');
-const username = localStorage.getItem('username') || 'Guest';
-welcomeText.textContent = `Welcome ${username}`;

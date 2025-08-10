@@ -8,13 +8,13 @@
     </head>
     <body>
         <div class="card">
-            <!-- Normal Header -->
-            <div class="header-2">
-                <p id="welcome-text">Welcome Username Message</p>
-            </div>
+
+            
             <!-- Sticky Header -->
+             
             <header>
-                <div class="header-ctn">
+                <div class="main-header">
+                    <div class="header-ctn">
                     <img src="../images/image.png" alt="Printivo Logo" />
                 <nav>
                     <li>All Products</li>
@@ -41,16 +41,28 @@
                        <button>Menu</button>
                        <input type="text" placeholder="Quick Search">
                    </div>
-            </header>
+                </div>
+                
 
+                    <div class="header-2">
+                <div class="message">
+                    <p id="welcome-text"></p>
+                    <button id="logout" onclick="outBtn()">Logout</button>
+                </div>
+            </div>
+            </header>
+           
             <!-- Main -->
              <main>
+                
+                <div>
                 <button>Menu</button>
                 <h1>Quality Prints</h1>
                 <h4>Shipped to your doorstep</h4>
                 <p>What would you like to print today?</p>
                 <input type="text" placeholder="Search for Business cards, T-shirts, Mugs, etc">
                 <img src="../images/Card3_n9kqin.png" alt="Printivo-Card">
+                </div>
              </main>
 
              <!-- Gallery -->
@@ -203,6 +215,29 @@
         </div>
         </div>
         
-            <script src="../scripts/script.js"></script>
+
+        <!-- <script src="scripts/signup.js"></script>
+            <script src="../scripts/script.js"></script> -->
+
+           <script>
+    const storedName = localStorage.getItem('userName'); // Get name
+    if (storedName) {
+      document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`
+    } else {
+      document.getElementById('welcome-text').textContent = 'Welcome, Guest!';
+    }
+
+    function outBtn() {
+        const signOut = document.getElementById('logout')
+        if (signOut) {
+            window.location.href = 'index.html'
+            localStorage.clear()
+            alert('You will be logged out of the page')
+        } else {
+            alert('Logout')
+        }
+    }
+  </script>
+            
     </body>
 </html>

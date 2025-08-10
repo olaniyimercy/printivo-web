@@ -14,7 +14,7 @@
       <form action="#">
         <h2 style="font-size: 2.5rem;">Login</h2>
         <div class="int">
-          <input type="text" placeholder="Username" required/>
+          <input type="text" placeholder="Username" id="username" required/>
           <i class="bx bxs-user"></i>
         </div>
         <div class="int">
@@ -36,6 +36,17 @@
         <!-- <footer>&copy; 2025</footer> -->
       </form>
   
-      <script src="../scripts/signup.js"></script>
+      <!-- <script src="../scripts/signup.js"></script> -->
+
+       <!-- <script>
+                 function login() {
+                    event.preventDefault(); // Stop form from refreshing
+      const name = document.getElementById('username').value;
+      console.log(name);
+      
+      localStorage.setItem('userName', name); // Store in localStorage
+      window.location.href = 'homepage.html'; // Go to homepage
+                 }
+            </script> -->
 </body>
 </html>

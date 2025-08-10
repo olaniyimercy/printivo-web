@@ -30,18 +30,3 @@ passwordInput.addEventListener('input', function () {
         checker.style.color = 'Green';
     }
 });
-
-
-function regBtn(){
-    let name = document.getElementById("name").value
-    let email = document.getElementById("email").value
-    let password = document.getElementById("password").value
-    let userDetails = {
-        name: name,
-        email: email,
-        password: password
-    }
-    localStorage.setItem("user", JSON.stringify(userDetails))
-    let mango = JSON.parse(localStorage.getItem("user")).email
-    console.log(mango);
-}

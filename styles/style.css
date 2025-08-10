@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    button,input:hover {
+        cursor: pointer;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     background-color: #ebe8d9;
     padding: 1rem 2rem;
     color: gray;
@@ -30,6 +39,19 @@ header {
     width: 100%;
     z-index: 999;
 
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .message {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .header-ctn {
         width: 100%;
@@ -62,6 +84,8 @@ header {
 
 .header-2 {
     padding: 1rem 2rem;
+    width: 100%;
+  
 
     p {
         color: gray;
@@ -74,6 +98,14 @@ main {
     background-color: #ECE8D9;
     padding: 10.2rem 2rem;
     line-height: 3.5rem;
+
+    #welcome-text {
+        font-family: "DM Serif Display", serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: #384a62;
+    }
 
     button {
         display: none;
@@ -147,6 +179,11 @@ main {
     
     img {
         width: 10rem; 
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
     }
 
     #home {
@@ -347,6 +384,11 @@ footer {
             img {
                 width: 2.5rem;
                 margin-right: 1rem;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                transition: all .3s ease-in-out;
             }
         }
 
