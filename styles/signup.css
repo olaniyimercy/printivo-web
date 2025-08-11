@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ffffff, #7a7ae9);
+    background-color: #ece8d9;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -33,6 +33,11 @@ body {
 .inputs {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+}
+
+.int {
+    display: flex;
     gap: 1rem;
 }
 

@@ -6,13 +6,13 @@ if (userString) {
     document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`;
     } else {
       document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`;
-    }
+}
 
 // Logout
 function outBtn() {
         const signOut = document.getElementById('logout')
         if (signOut) {
-            window.location.href = 'index.html'
+            window.location.href = 'signup.html'
             localStorage.clear()
             alert('You will be logged out of the page')
         } else {
