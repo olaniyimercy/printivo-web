@@ -57,7 +57,9 @@ i {
 }
 
 #displayStrength {
-    display: block;
+  font-size: .6rem;
+  width: 15rem;
+  height: auto;
 }
 
 #submit {
@@ -67,7 +69,6 @@ i {
     border: 0;
     font-weight: 550;
     font-size: 1rem;
-    margin-top: .8rem;
 }
 #submit:hover {
     background-color: rgb(180, 165, 165);

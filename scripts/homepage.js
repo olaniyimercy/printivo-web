@@ -12,13 +12,23 @@ if (userString) {
 function outBtn() {
         const signOut = document.getElementById('logout')
         if (signOut) {
-            window.location.href = 'signup.html'
-            localStorage.clear()
+            window.location.href = 'signin.html'
             alert('You will be logged out of the page')
         } else {
             alert('Logout')
         }
 }    
+
+// Signout
+function createBack() {
+        const home = document.getElementById('signout')
+        if (home) {
+            window.location.href = 'index.html'
+            alert('You will be signout of the page ')
+        } else {
+            alert('Logout')
+        }
+} 
     
 // This script fetches product data from an API and displays it on the homepage.
 const getUser = async () => {
