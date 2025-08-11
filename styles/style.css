@@ -18,7 +18,7 @@ body {
     font-family: sans-serif;
     margin: auto;
     overflow-x: hidden;
-    
+
     
     li {
         list-style: none;
@@ -51,11 +51,11 @@ header {
     
     #logout {
             padding: .5rem 1rem;
-            background-color: white;
+            background-color: #D77F81;
             border: 0;
             border-radius: .2rem;
             font-size: 1.3rem;
-            color: #D77F81;
+            color: #fff;
         }
 
     .header-ctn {
@@ -213,7 +213,7 @@ main {
 
     p {
         color: #506683;
-        width: 38rem;
+        width: 100%;
         font-size: 1.3rem;
         line-height: 1.7rem;
         font-weight: 500;
@@ -439,6 +439,11 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+
+    * {
+        width: auto;
+    }
+
     body {
         width: 100vw;
         height: 100vh;
@@ -551,7 +556,7 @@ footer {
             gap: 2rem;
 
             .mission-content {
-                width: 50%;
+                width: 100%;
             }
         }
     }
