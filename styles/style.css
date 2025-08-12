@@ -91,7 +91,7 @@ header {
 main {
     background-color: #ECE8D9;
     padding: 8rem 2rem;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
 
         .message {
         width: 100%;
@@ -123,7 +123,7 @@ main {
     }
 
     input {
-        width: 55%;
+        width: auto;
         border: none;
         padding: 1.7rem 1rem;
         font-size: 1.2rem;
@@ -453,6 +453,7 @@ footer {
     }
 
     header {
+        width: 100%;
         flex-direction: column;
         align-items: center;
 
@@ -460,9 +461,15 @@ footer {
             align-items: center;
             gap: 1rem;
 
+            img {
+                width: 4rem;
+            }
+
             #logout {
                 background-color: #D77F81;
                 color: white;
+                padding: .2rem .4rem;
+                font-size: 1rem;
             }
         }
 
@@ -473,20 +480,21 @@ footer {
         .q-search {
             display: flex;
             width: 100%;
-            padding-bottom: 1rem;
-            gap: 1rem;
+            gap: .7rem;
+            font-size: 1rem;
 
             button {
-                padding: .8rem 2rem;
+                padding: .3rem .5rem;
                 color: white;
                 background-color: #D77F81;
                 border-radius: .2rem;
                 border: 0;
+                font-size: 1rem;
             }
 
             input {
                 width: 100%;
-                padding: .8rem 1rem;
+                padding: .3rem .5rem;
                 border-radius: .2rem;
                 border: 1px solid grey;
             }
@@ -502,13 +510,17 @@ footer {
 
         .message {
             #welcome-text {
-            font-size: 1.7rem;
+            font-size: 1rem;
         }
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 2rem;
         }
+
+         h4 {
+        font-size: 1.1rem;
+    }
 
         input {
             width: 100%;
@@ -518,11 +530,36 @@ footer {
 
     }
 
+    .logos {
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.logo-img {
+    height: 4rem;
+}
+
+    .gallery-header {
+    font-size: 1.1rem;
+
+    p {
+        color: #d77f81;
+        font-size: 1rem;
+    }
+}
+
     .review {
+        width: 100%;
         padding: 3rem 2rem;
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         #reviews {
@@ -532,12 +569,12 @@ footer {
         }
 
         .review-box {
-            width: 100%;
-            max-width: 25rem;
-            margin-right: 0;
+            width: auto;
+            margin: auto;
         }
 
         .box-content {
+            width: 100%;
             flex-direction: row;
             align-items: center;
         }
@@ -547,7 +584,7 @@ footer {
         padding: 3rem 2rem;
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .mission-box {
@@ -557,6 +594,8 @@ footer {
 
             .mission-content {
                 width: 100%;
+                flex-direction: column;
+                margin: auto;
             }
         }
     }
@@ -566,12 +605,14 @@ footer {
         gap: 2rem;
 
         h3 {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
         }
 
         .text-container {
             flex-direction: column;
             align-items: start;
+            gap: 2rem;
+            width: 100%;
         }
 
         .article-text {
@@ -607,6 +648,6 @@ footer {
             padding: 2rem 0;
             background-color: #ECE8D9;
             color: #384A62;
-            font-size: 1.3rem;
+            font-size: 1.2em;
         }
 }

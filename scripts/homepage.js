@@ -3,7 +3,7 @@ let userString = localStorage.getItem('user');
 if (userString) {
     let used = JSON.parse(userString);
     let storedName = used.name;
-    document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`;
+    document.getElementById('welcome-text').textContent = `Hi ${storedName}, welcome to Printivo.`;
     } else {
       document.getElementById('welcome-text').textContent = `Welcome to Printivo, ${storedName}`;
 }
