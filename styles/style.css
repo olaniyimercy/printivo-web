@@ -91,7 +91,7 @@ header {
 main {
     background-color: #ECE8D9;
     padding: 8rem 2rem;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
 
         .message {
         width: 100%;
@@ -112,7 +112,7 @@ main {
 
     h1 {
         font-family: "DM Serif Display", serif;
-        font-size: 5rem;
+        font-size: 3.5rem;
         color: #384a62;
     }
 
@@ -122,8 +122,12 @@ main {
         font-size: 1.3rem;
     }
 
+    p {
+        font-size: 1rem;
+    }
+
     input {
-        width: 55%;
+        width: 69%;
         border: none;
         padding: 1.7rem 1rem;
         font-size: 1.2rem;
@@ -133,7 +137,7 @@ main {
     img {
         width: 30rem;
         position: absolute;
-        top: 21.5rem;
+        top: 17.7rem;
         right: 0;
     }
 }
