@@ -17,7 +17,7 @@ body {
     height: 100vh;
     font-family: sans-serif;
     margin: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     
     li {
@@ -289,6 +289,7 @@ main {
 .mission {
     padding: 9rem 2rem;
     width: 100%;
+    margin: auto;
 
     h3 {
         font-size: 1.5rem;
@@ -309,7 +310,7 @@ main {
         gap: 2rem;
         flex: 1;
         line-height: 1.5rem;
-        width: 10rem;
+        width: auto;
 
         p {
             line-height: 1.8rem;
