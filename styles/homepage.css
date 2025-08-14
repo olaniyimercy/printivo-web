@@ -488,6 +488,10 @@ footer {
         flex-direction: column;
         align-items: center;
 
+        #menu-list {
+            display: none;
+        }
+
         .header-ctn {
             align-items: center;
             gap: 1rem;
