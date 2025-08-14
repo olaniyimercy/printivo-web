@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-      <link rel="stylesheet" href="../styles/signin.css">
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="container">
-      <form action="#">
-        <h2 style="font-size: 2.5rem;">Login</h2>
-        <div class="int">
-          <input type="text" placeholder="Username" id="username" required/>
-          <i class="bx bxs-user"></i>
-        </div>
-        <div class="int">
-          <input type="password" id="passwordIn" placeholder="Password" required/>
-          <i class="bx bxs-lock-alt"></i>
-        </div>
-        <div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Login</h2>
+    <p class="subtitle">Welcome back! Please enter your details</p>
+
+    <form action="#">
+      <input type="text"  id="username"  placeholder="Username" required>
+      <input type="password" id="passwordIn" placeholder="Enter password" required>
+      <div>
            <p id="displayStrength"></p>
         </div>
-         
-        <div class="inputs">
-        <button id="submit" onclick="login()">
-          Login
-        </button>
-        </div>
-      </form>
-  
-   <script src="./scripts/signin.js"></script>
+      <button type="submit" id="submit" onclick="login()">Login</button>
+    </form>
+  </div>
+<script src="./scripts/signin.js"></script>
 </body>
 </html>

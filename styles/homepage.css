@@ -40,6 +40,30 @@ header {
     width: 100%;
     z-index: 999;
 
+    #menu-list {
+      width: 100%;
+      display: none;
+      display: flex;
+      padding: 2rem 0;
+      line-height: 2.5rem;
+      color: #384a62;
+      font-size: 1.1rem;
+      scroll-behavior: smooth;
+
+      span {
+        color: #d77f81;
+      }
+    }
+
+    #clear {
+        color: #384A62;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 0;
+        background-color: white;
+        float: right;
+    }
+
     .main-header {
         display: flex;
         flex-direction: column;
@@ -101,6 +125,7 @@ main {
         padding: 2rem 0;
 
         #welcome-text {
+            text-transform: capitalize;
             font-size: 2rem;
             color: #384a62;
         }
@@ -446,7 +471,6 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
-
     * {
         width: auto;
     }
@@ -517,7 +541,8 @@ footer {
 
         .message {
             #welcome-text {
-            font-size: 1rem;
+            text-transform: capitalize;
+            font-size: 1.4rem;
         }
         }
 

@@ -37,18 +37,27 @@ function regBtn() {
     let checkpassword2 = document.getElementById('confirm').value
       event.preventDefault();
       const name = document.getElementById('fullName').value;
+      const email = document.getElementById('email')
     console.log(name);
     let userDetails = {
         name: name,
         password: checkpassword1
     }
+
     
-    if (checkpassword1 !== checkpassword2 || name === '') {
-        alert("Password didn't match")
+    
+    if (name === '' || checkpassword1 ==='' || checkpassword2 === '' || email === '') {
+        alert("Please fill the appropriate form")
     } else {
+         if (checkpassword1 !== checkpassword2) {
+        alert("Password didn't match")
+    }else {
            window.location.href = 'signin.html';
         alert('Successfully SignUp')
     }
+}
+
+    
     localStorage.setItem('user', JSON.stringify(userDetails));
     console.log(user);
 }

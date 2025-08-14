@@ -11,13 +11,12 @@ function login() {
         console.log(storedPassword);
 
     if (b !== storedPassword) {
-         alert('Invalid')
+         alert('Incorrect Password')
     } else {
         alert('Valid')
         if (a === '' && b === '') {
             alert('Invalid credentials, please try again');
         } else {
-        
             window.location.href = 'homepage.html';
             alert('Successfully Logged In');
         }

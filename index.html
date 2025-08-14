@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-      <link rel="stylesheet" href="../styles/signup.css">
-    <title>Create an account</title>
-  </head>
-  <body>
-    <div class="container">
-      <form action="#">
-        <h2 style="font-size: 2rem;">Create an account</h2>
-        <div class="int">
-            <input type="text" id="fullName" placeholder="Full Name" required>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><circle cx="24" cy="11" r="7" fill="currentColor"/><path d="M4 41c0-8.837 8.059-16 18-16"/><path fill="currentColor" d="m31 42l10-10l-4-4l-10 10v4z"/></g></svg>
-        </div>
-        <div class="int">
-          <input type="email" id="email" placeholder="Email" required/>
-          <i class="bx bxs-user"></i>
-        </div>
-        <div class="int">
-          <input type="password" id="firstpassword" placeholder="Password" required/>
-          <i class="bx bxs-lock-alt"></i>
-        </div>
-        <div class="int">
-          <input type="password" id="confirm" placeholder="Confirm Password" required/>
-          <i class="bx bxs-lock-alt"></i>
-        </div>
-        <div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Your Account</h2>
+    <p class="subtitle">Welcome ! Please enter your details</p>
+
+    <form action="#">
+      <input type="text" id="fullName" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="firstpassword" placeholder="Password" required>
+      <input type="password" id="confirm" placeholder="Retype Password" required>
+      <div>
            <p id="displayStrength"></p>
         </div>
-        <div class="inputs">
-           <button id="submit" onclick="regBtn()" >
-            Signup
-        </button>
-        </div>
-      </form>
-    </div>
-    <script src="./scripts/index.js"></script>
+      <button type="submit" id="submit" onclick="regBtn()">Sign Up</button>
+    </form>
+  </div>
+<script src="./scripts/index.js"></script>
+</body>
 </html>

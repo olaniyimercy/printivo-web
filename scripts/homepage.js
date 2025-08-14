@@ -1,3 +1,17 @@
+// Menu Dropdown
+const menuDrop = document.getElementById('menu')
+const menuBtn = document.getElementById('menu-list')
+menuDrop.addEventListener('click', () => {
+    menuBtn.style.display = 'block'
+})
+
+//Clear 
+const clearMenu = document.getElementById('clear')
+clearMenu.addEventListener('click', () => {
+    menuBtn.style.display = 'none'
+})
+
+
 //Welcome Message for the User
 let userString = localStorage.getItem('user');
 if (userString) {
