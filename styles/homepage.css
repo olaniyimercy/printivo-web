@@ -41,27 +41,7 @@ header {
     z-index: 999;
 
     #menu-list {
-      width: 100%;
       display: none;
-      display: flex;
-      padding: 2rem 0;
-      line-height: 2.5rem;
-      color: #384a62;
-      font-size: 1.1rem;
-      scroll-behavior: smooth;
-
-      span {
-        color: #d77f81;
-      }
-    }
-
-    #clear {
-        color: #384A62;
-        font-size: 1.3rem;
-        font-weight: bold;
-        border: 0;
-        background-color: white;
-        float: right;
     }
 
     .main-header {
@@ -490,8 +470,27 @@ footer {
         align-items: center;
 
         #menu-list {
-            display: none;
-        }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      line-height: 2.5rem;
+      color: #384a62;
+      font-size: 1.1rem;
+
+      #clear {
+        color: #384A62;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 0;
+        background-color: white;
+        float: right;
+    }
+
+      span {
+        color: #d77f81;
+      }
+    }
 
         .header-ctn {
             align-items: center;
