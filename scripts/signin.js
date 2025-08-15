@@ -7,18 +7,17 @@ function login() {
     console.log(optin);
 
     let used = JSON.parse(userString);
-        let storedPassword = used.password;
-        console.log(storedPassword);
-
-    if (b !== storedPassword) {
-         alert('Incorrect Password')
+    let storedPassword = used.password;
+    console.log(storedPassword);
+    
+    if (a === '' || b === '') {
+        alert('Please input the approriate details')
     } else {
-        alert('Valid')
-        if (a === '' && b === '') {
-            alert('Invalid credentials, please try again');
-        } else {
-            window.location.href = 'homepage.html';
-            alert('Successfully Logged In');
-        }
+         if (b !== storedPassword) {
+           alert('Incorrect Password')
+         } else {
+             window.location.href = 'homepage.html'
+             alert('Login successfull')
+       }
     }
 }

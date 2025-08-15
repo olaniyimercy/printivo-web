@@ -115,7 +115,7 @@ header {
 main {
     background-color: #ECE8D9;
     padding: 8rem 2rem;
-    line-height: 3.5rem;
+    line-height: 2rem;
 
         .message {
         width: 100%;
@@ -149,6 +149,7 @@ main {
 
     p {
         font-size: 1rem;
+        margin: 1rem 0;
     }
 
     input {
@@ -162,7 +163,7 @@ main {
     img {
         width: 30rem;
         position: absolute;
-        top: 17.7rem;
+        top: 15.5rem;
         right: 0;
     }
 }
@@ -546,7 +547,7 @@ footer {
         .message {
             #welcome-text {
             text-transform: capitalize;
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
         }
 
