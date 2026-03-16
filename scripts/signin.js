@@ -2,22 +2,25 @@
 function login() {
     let a = document.getElementById('username').value;
     let b = document.getElementById('passwordIn').value;
-    let userString = localStorage.getItem('user');
-    let optin = document.getElementById('submit')
-    console.log(optin);
-
-    let used = JSON.parse(userString);
-    let storedPassword = used.password;
-    console.log(storedPassword);
     
     if (a === '' || b === '') {
-        alert('Please input the approriate details')
+        alert('Please input the appropriate details');
+        return;
+    }
+    
+    let userString = localStorage.getItem('user');
+    if (!userString) {
+        alert('No user found. Please sign up first.');
+        return;
+    }
+    
+    let used = JSON.parse(userString);
+    let storedPassword = used.password;
+    
+    if (b !== storedPassword) {
+        alert('Incorrect Password');
     } else {
-         if (b !== storedPassword) {
-           alert('Incorrect Password')
-         } else {
-             window.location.href = 'homepage.html'
-             alert('Login successfull')
-       }
+        alert('Login successful');
+        window.location.href = 'homepage.html';
     }
 }
