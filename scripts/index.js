@@ -16,16 +16,16 @@ passwordInput.addEventListener('input', function () {
     const numbers = includeNumbers.test(passwordValue);
     const characters = includeCharacters.test(passwordValue);
     
-    if (!letters || !numbers || !characters) {
-        checker.textContent = 'Must contain numbers, alphabet and special characters';
-        checker.style.color = 'red';
-    }else if (passwordValue.length < 5) {
+    if (passwordValue.length < 5) {
         checker.textContent = 'Weak';
         checker.style.color = 'red';
-    }else if (passwordValue.length >= 5 && passwordValue.length <= 8) {
+    } else if (!letters || !numbers || !characters) {
+        checker.textContent = 'Must contain numbers, alphabet and special characters';
+        checker.style.color = 'red';
+    } else if (passwordValue.length >= 5 && passwordValue.length <= 8) {
         checker.textContent = 'Medium';
         checker.style.color = 'yellow';
-    }else {
+    } else {
         checker.textContent = 'Strong';
         checker.style.color = 'Green';
     }
@@ -35,29 +35,25 @@ passwordInput.addEventListener('input', function () {
 function regBtn() {
     let checkpassword1 = document.getElementById('firstpassword').value
     let checkpassword2 = document.getElementById('confirm').value
-      event.preventDefault();
-      const name = document.getElementById('fullName').value;
-      const email = document.getElementById('email')
+    event.preventDefault();
+    const name = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
     console.log(name);
-    let userDetails = {
-        name: name,
-        password: checkpassword1
-    }
-
-    
     
     if (name === '' || checkpassword1 ==='' || checkpassword2 === '' || email === '') {
         alert("Please fill the appropriate form")
     } else {
-         if (checkpassword1 !== checkpassword2) {
-        alert("Password didn't match")
-    }else {
-           window.location.href = 'signin.html';
-        alert('Successfully SignUp')
+        if (checkpassword1 !== checkpassword2) {
+            alert("Password didn't match")
+        } else {
+            let userDetails = {
+                name: name,
+                password: checkpassword1
+            }
+            localStorage.setItem('user', JSON.stringify(userDetails));
+            console.log(userDetails);
+            window.location.href = 'signin.html';
+            alert('Successfully SignUp')
+        }
     }
-}
-
-    
-    localStorage.setItem('user', JSON.stringify(userDetails));
-    console.log(user);
 }
